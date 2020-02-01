@@ -1,0 +1,35 @@
+- { name: 'Fragmentation'
+    description: 'a) Divide an object into independent parts b) Execute object separated c)Increase the degreee of fragmentation or segmentation'
+    references: 
+    - [ariz-1973] p.141  
+  }
+- { name: 'Taking out'
+    description: 'separate an "obstructing" part ("obstructing" property) from the object, or, backwards, distinguish unique necessary parr (necessary property)'
+    references: 
+    - [ariz-1973] p.141
+  }
+- { name: 'Local quality'
+    description: 'a) Move from a homogeneous object\'s structure (or external environment, or external influence) to a heterogeneus structure b) Disinct parts of the object should have distinct functions c) Each part of the object should be in conditions that mostly appropriate for its work'
+    references: 
+    - [ariz-1973] p.143
+  }
+- { name: 'Assymetry'
+    description: ''
+    references: 
+    - [ariz-1973] p.144
+  }
+- { name: 'Unification'
+    description: 'a) Unite (merge, compound) homogeneous (or specified for related operations) objects b) Unite in time uniform or related operations'
+    references: 
+    - [ariz-1973] p.145
+  }
+- { name: 'Universality'
+    description: 'an object performs several different functions so that there is no need to have other objects'
+    references: 
+    - [ariz-1973] p.146    
+}
+- { name: 'Nested doll'
+    description: 'a) One object is placed inside the other object, where the latter is inside the third one, and so on. b) One object passes through cavity of the other object'
+   references: 
+    - [ariz-1973] p.146     
+  }

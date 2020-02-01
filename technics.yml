@@ -1,8 +1,0 @@
-- { name: 'fragmentation',
-    description: 'a) Divide object on independent parts b) Execute object separated c)Increase fragmentation level'
-  }
-- { name: 'transmission',
-    description: 'separate from the object an "obstructing" part ("obstructing" property) or, backwords, distinguish unique necessary parr (necessary property)'
-  }
-  
-  
