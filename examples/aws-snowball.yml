@@ -4,7 +4,10 @@ description: 'A client wants to upload large organisation data to a cloud servic
               Amazon solution: Amazon sends a box 'Snowball' containing fast hard drives to the client's office. 
                                The box can be connected via the fastest available network interfaces. The data is encrypted for safety.
                                After data uploading, the client sends the box to the Amazon data center.
+              Use case 1: An organization migrates office data to a cloud.
+              Use case 2: A large music event where media videos and photos are stored locally to the Amazon box for a later transition to the cloud.
               There is a similar approach in the (AWS Snowmobile|ref:aws-snowmobile.yml).    
 links: 
 - {name: 'Snowball', url: 'https://aws.amazon.com/snowball/details/'}
+- {name: 'Snowball Edge', url: 'https://aws.amazon.com/snowball-edge/'}
 relates: aws-snowmobile.yml
