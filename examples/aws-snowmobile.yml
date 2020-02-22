@@ -1,0 +1,11 @@
+name: 'AWS Snowball'
+description: 'A client wants to close the data center and transfer data to a cloud service. 
+              The cabel speed is limited between data centers and uploading all the data might take months.              
+              Amazon solution: Amazon sends a truck of fast storage devices. 
+                               The box can be connected via the fastest available network interfaces.
+                               After data uploading, the truck moves the boxes to the Amazon data center.    
+links: 
+- {name: 'Snowmobile', url: 'https://aws.amazon.com/snowmobile/'}
+
+relates: aws-snowball.yml
+
