@@ -1,0 +1,8 @@
+name: 'AWS Snowball'
+description: 'A client wants to upload large organisation data to a cloud service. 
+              The internet speed is limited and the uploading all the data might take months.
+              Amazon solution: Amazon sends a box 'Snowball' containing fast hard drives to the client's office. 
+                               The box can be connected via the fastest available network interfaces. The data is encrypted for safety.
+                               After data uploading, the client sends the box to the Amazon data center.    
+links: 
+- {name: 'Snowball', url: 'https://aws.amazon.com/snowball/details/'}
