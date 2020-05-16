@@ -1,0 +1,6 @@
+name: '3D light tracing'
+description: 'One light bulb produces 10^19 photons per second. 
+              To calculate a 3D scene projected to the camera from the light source requires too many resources.
+              Solution: reverse light trajectory calculation, start from the camera and consider only the light that can reach the camera).    
+links: 
+- {name: 'Snowball', url: 'https://youtu.be/jCImXmI5QGM'}
