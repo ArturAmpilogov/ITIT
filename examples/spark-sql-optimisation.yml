@@ -1,0 +1,10 @@
+name: 'Spark SQL optimisation'
+description: 'Apache Spark is an application for fast processing of distrubuted datasets.
+              Spark, before processing, divides the large data on smaller parts and distributes them among computer nodes called "workers".
+              To combine datasets for the "JOIN" query the data blocks should be exchanged between nodes, and exchanging the data via network is very slow operation.
+              The query contains "WHERE" (filter) clause after the join, but it is still slow to process due the initial network data exchange.
+              Spark solution: Reorder query without output difference by moving filter clause at the beginning. Passing reduced data between nodes gains performance.
+              `dataset1.join(dataset2).filter(...)` -> `dataset1.filter(...).join(dataset2.filter(...))` 
+              The idea is taken from Relational Databases query optimisation techniques.
+links: 
+- {name: 'IBM Blog - Analyze your Spark application using explain', url: 'https://developer.ibm.com/technologies/artificial-intelligence/blogs/how-to-understanddebug-your-spark-application-using-explain/'}
