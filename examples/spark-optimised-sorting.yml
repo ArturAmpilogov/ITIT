@@ -1,4 +1,4 @@
-name: 'Spark optmized sorting'
+name: 'Spark optimised sorting'
 description: 'Apache Spark is an application for fast processing of distrubuted datasets.
               Spark, before processing, divides the large data on smaller parts and distributes them among computer nodes called "workers".
               Sorting requires memory jump by reference to get the actual values for comparison. 
