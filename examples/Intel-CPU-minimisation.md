@@ -1,8 +1,8 @@
 name: 'Intel CPU minimisation'
 description: 'Scientific tasks, such as whether prediction, simulation of particles interraction, economic behaviour simulation, machine learning, require enormous number of operations on numbers.
-              The super computer "ASCI Red 1997" had 9632  Intel Perntium II processors with the total computation power of 2.38 Teraflops floating number operations.
+              The super computer "ASCI Red 1997" had 9632  Intel Perntium II processors with the total computation power of 2.38 TeraFLOPS (Tera - trillion, FLOPS - floating point operations per second).
               This computer was a cluster of multiple machine cabinets and took the space of 230 squared meters.
-              19 years later, Intel presented Intel Xeon Phi 7200 series processors having the size of an adult's palm and the power of more than 2.6 Teraflops.'
+              19 years later, Intel presented Intel Xeon Phi 7200 series processors having the size of an adults palm and the power of more than 2.6 Teraflops.'
 links: 
 - {name: 'Coursera - Intel parallelism introduction', url: 'https://www.coursera.org/learn/parallelism-ia/lecture/OHYYi/1-0-introduction'}
 - {name: 'ASCI Red', url: 'https://web.archive.org/web/20160109013948/http://www.top500.org/featured/systems/asci-red-sandia-national-laboratory/'}
