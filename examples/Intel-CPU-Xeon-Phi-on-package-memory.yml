@@ -1,0 +1,14 @@
+name: 'Intel CPU Xeon Phi on-package memory'
+description: 'On-board memory, such as DDR plank, is placed in special motherboard slots.
+              The distance between CPU and DDR can be 15 sm, and transfering electroning signals takes time.
+              The total speed of all DDR-4 channels for Intel Xeon Phe Gen 2 processor is 90 GB/s.
+              How to increase the speed.
+              Intel solution: Place memory directly on CPU package, and use more channels for data transfer.
+              With memory type called Multi-Channel DRAM (MCDRAM) the speed was increased on Xeon Phi processor up to 500 GB/s.
+              The limitation is the capacity of memory due the chip size and production technology. 
+              If DDR-4 could hold TB of data, MCDRAM on-package was limited by 16 GB.
+              MCDRAM can be used programmatically as a standalone memory resourse (flat mode), or automatically as a cache between CPU L2 cache level and DDR-4 (cache mode), or in a hybrid aproach "flat+cache"'
+links: 
+- {name: 'Intel’s "Knights Landing" Xeon Phi Coprocessor Detailed', url: 'https://www.anandtech.com/show/8217/intels-knights-landing-coprocessor-detailed'}
+- {name: 'Intel unveils 72-core x86 Knights Landing CPU for exascale supercomputing', url: 'https://www.extremetech.com/extreme/171678-intel-unveils-72-core-x86-knights-landing-cpu-for-exascale-supercomputing'}
+- {name: 'Coursera - Intel Fundamentals of Parallelism on Intel Architecture - High Bandwidth Memory', url: 'https://www.coursera.org/learn/parallelism-ia/lecture/3zI6j/4-3-high-bandwidth-memory'}
