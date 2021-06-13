@@ -1,12 +1,20 @@
 name: 'Spark optimised sorting'
 description: 'Apache Spark is an application for fast processing of distrubuted datasets.
               Spark, before processing, divides the large data on smaller parts and distributes them among computer nodes called "workers".
-              Sorting requires memory jump by reference to get the actual values for comparison. 
-              Refernces can lead to a chain of jumps, and each call is a slow operation.
-              Spark solution: Store small record prefix (number or string) near a record reference. 
-              CPU reads prefixes and references in a contigous block of memory and caches them in the fast L1, L2, L3 on chip memory levels.
-              At first step, the pre-sort method is done by prefixes, then the records can be sorted fully using reference jumps. 
-              Data movement between CPU and main memory is drastically reduced.'
+              Sorting requires memory jump by object references to get the actual values for comparison. 
+              References can lead to a chain of jumps, and each call is a slow operation.
+              In a multi core processor each core has its own the fastest but the smallest memory.               
+              Accessing memory from another core is more time comsuming from own core.
+              The simialr, but even worth in time situation exists in multi-socket CPU systems with dedicated DDR memory per CPU socket.
+              How to reduce memory reference jumps and divide objects between cpus/cores?
+              Spark solution: Store small record prefix (number or string) near a record memory reference. 
+              CPU reads prefixes and references in a contigous block of memory and caches them in the fast L1, L2, LLC on chip memory levels.
+              At first step, the pre-sort method is done by prefixes, then the records can be sorted fully using reference jumps.
+              The gain here is that the system will quickly partition data (pre-sort) per CPU/core. 
+              Data movement between CPUs and main memory is drastically reduced in the first sort phase.
+              There is one more plus from this aproach. Often the main Spark node needs to spread the sort workload among worker noads. 
+              In this solution the main node does not need to make costly memory jumps to the final value memory location.
+              Just quickly pre-sort and send the data to worker nodes.'
 links: 
 - {name: 'Deep Dive into Project Tungsten Bringing Spark Closer to Bare Metal -Josh Rosen (Databricks)', url: 'https://youtu.be/5ajs8EIPWGI?t=1134'}
 - {name: 'Deep Dive: Apache Spark Memory Management', url: 'https://youtu.be/dPHrykZL8Cg?t=1211' }
