@@ -1,0 +1,18 @@
+name: 'CPU cache compression'
+description: 'The structure of CPU and caches:
+              CPU <---> L1 cache uncompressed <---> Encoder/Decoder <---> L2 cache compressed.
+              A request from CPU to L2 cache without Encoder/Decoder costs 10-15 cycles.
+              Software compression (Lempel-Ziv: gzip, png, gif, Hufmman coding) are very effective but are very slow and complex for hardware implementation. Compression phace is not a problem, the data can be stored in a hybrid mode: uncompressed raw, and then compressed in a background task. Decompression is the problem as CPU should get data immediately without additional cycles. 
+              Decompression phase of software algorithms would take more than 100 cycles, which is unacceptable.
+              The task is to implement a decoder with simple hardware structure and low latency (near 0 cycles).
+              Solution: Base Delta-Immediate compression. 
+              Observations of L2 cache showed tham most applications produce "low dynamic range memory", i.e difference between values are significantly smaller than the values themselves. For example, a cache line might look like 0x00000001, 0x00000010, 0x00000AB. Only the last 2 hex values are different. This data behaviour comes from the software nature, often memory references differ only in several bytes. Also programmers like to use 32 bit int number types even for small values, or in some cases compilers automatically convert short and boolean numbers to int types due the memory alignment allocation requirememt.
+
+              Delta algorithm: the cache line can be compressed as a "base value" plus a "small difference": 0x00000001 | 09 | AA .
+
+              Decompression can be done by simple addition or substration, and the calculation can be parallelised with vector operation, which is only 1 cycle. The overall performance of L2 compresses cache is the same as 2xL2 uncompresses cache, this gives about 8% CPU speed up.
+
+              The idea hear is too look at low cost paralellisable operations: plus or minus on a vector data. 
+              Delta difference becomes obvious as a solution. The only non obvious question of this approach would be the revealed data spread.'
+links: 
+- {name: 'Carnegie Mellon Computer Architecture, Gennady Pehkimenko, 2014 ', url: 'https://www.youtube.com/watch?v=JW9GXoMYcN0'}
