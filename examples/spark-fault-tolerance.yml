@@ -1,0 +1,12 @@
+name: 'Spark fault tolerance'
+description: 'In a distributed computer system a node can be unavailable or hardware can become totally broken.
+              Spark makes transformations and actions on large set of distributed data.
+              How to make the system fault tolerant, i.e. how to restore the lost data from a broken node and restore the system state?
+              Spark solution: Partition data between nodes. 
+                              Make data collections read only. 
+                              Make all functions that modify collections without side effects (functional programming).
+                              Store resiliently the dependency graph for each partion - initial data source, applied functions, base partions.
+                              The type of graph is Directed Acyclic Graph (DAG).
+                              If a computer node crashed, Spark recalculates the failed partion goting through the graph steps.
+links: 
+- {name: 'Coursera - Big Data Analysis with Scala and Spark - Wide vs Narrow Dependencies', url: 'https://www.coursera.org/learn/scala-spark-big-data/lecture/0RQHq/structured-vs-unstructured-data'}
