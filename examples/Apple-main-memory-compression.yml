@@ -1,0 +1,19 @@
+name: 'Apple main memory compression'
+description: 'RAM (main) memory is 50-200 times faster that FLash/SSD disks.
+              At the same time main memory has large power consumption in the system, and it should be refreshed every 4-20 ms.
+              Larger main memory gives computer (mobile, tablet, laptop) perfomance but requires more electric power. 
+              How to increase main memory without power reduction?
+              
+              Apple solution: Track memory pages with "recreatable" data called "clean memory", for example, framework library, OS library and application binaries.
+              If there is not enough main memory, then the least used "clean" memory is "cleaned out". In case of future need it is realoaded.
+              If there is not enough space even after cleaning, then the main memory is compressed on the fly by Wilson-Kaplan WKdm algorithm.
+              
+              For years Apple iPhone models had twice less RAM capacity than competetive Android models, and at the same time iPhone could hold twice more applications in memory.
+              The same situation happened with Apple Macbook version. 
+              While most of laptop manufactures jumped to 32GB RAM holding 3-5 hours of work on battery, Apple stayed for a long time with 16GB RAM models ahieving 8-10 hours of work on battery.'
+links: 
+- {name: 'Adaptive Main Memory Compression, Irina Chihaia Tuduce and Thomas Gross', url: 'https://static.usenix.org/events/usenix05/tech/general/full_papers/tuduce/tuduce.pdf'}
+- {name: 'Compressed Memory in OS X 10.9 Mavericks aims to free RAM, extend battery life', url: 'https://appleinsider.com/articles/13/06/13/compressed-memory-in-os-x-109-mavericks-aims-to-free-ram-extend-battery-life'}
+- {name: 'OS X 10.9 Mavericks: The Ars Technica Review - Compressed memory', url: 'https://arstechnica.com/gadgets/2013/10/os-x-10-9/17/#compressed-memory'}
+- {name: 'The Compression Cache: Virtual Memory Compression for Handheld Computers, Michael J. Freedman, 2000', url:'https://www.cs.princeton.edu/~mfreed//docs/6.033/compression.pdf'}
+- {name: 'Proceedings of the USENIX Annual Technical Conference, 1999, The  Case  for  Compressed Cachingin  Virtual  Memory  Systems, Paul R. Wilson, Scott F. Kaplan, and Yannis Smaragdakis', url: 'https://www.usenix.org/legacy/events/usenix99/full_papers/wilson/wilson.pdf'}
