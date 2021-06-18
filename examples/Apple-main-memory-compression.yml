@@ -1,6 +1,6 @@
 name: 'Apple main memory compression'
 description: 'RAM (main) memory is 50-200 times faster that FLash/SSD disks.
-              At the same time main memory has large power consumption in the system, and it should be refreshed every 4-20 ms.
+              At the same time, main memory has large power consumption in the system beacause it should be refreshed every N ms to prevent current leakage.
               Larger main memory gives computer (mobile, tablet, laptop) perfomance but requires more electric power. 
               How to increase main memory without power reduction?
               
