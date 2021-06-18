@@ -1,0 +1,11 @@
+name: 'Cassandra database distributive read'
+description: 'Cassandra is a distributive database where each node has equal rights in processing requests (all nodes are primarary).
+              As a NoSQL database, Cassanrda allows to choose availability or consistency. 
+              Assume that a project chooses availability over consistency, i.e. some data can be written to node 1 and node 2, but yet not to node 3, and the request comes to node 3.
+              All nodes in the system are equal, how to get the latest result from node 3?
+              
+              Cassandra solution: Set up the minimum number of nodes that should be requested by the processing request node (node 3 in this case).
+              For example, consistency of factor 3 is chosen. It means node should request node 1 and node 2, compare the values and return the result.
+              How to compare the values? A recoded with the latest timestamp (or version) wins.
+links: 
+- {name: 'Coursera - Introduction to NoSQL Databases - Cassandra', url: 'https://www.coursera.org/learn/introduction-to-nosql-databases/lecture/19KYO/crud-operations-part-2'}
