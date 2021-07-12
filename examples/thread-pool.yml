@@ -2,7 +2,7 @@ name: 'Thread Pool'
 description: 'For concurrent process "threads" are used as flow of independent statements execution.
               Thread objects use a significant amount of memory, and in a large-scale application, allocating and deallocating many thread objects creates a significant memory management overhead.
               How to minimise thread creation overhead?
-              JVM and .NET solution: Pool of threads. Threads are not stopped, pool re-uses threads that completed tasks.'
+              JVM and .NET solution: Pool of threads. Threads are not destroyed, pool re-uses threads that completed tasks.'
 links: 
 - {name: 'Java Thread Pools', url: 'https://docs.oracle.com/javase/tutorial/essential/concurrency/pools.html'}
 - {name: '.NET ThreadPool Class', url: 'https://docs.microsoft.com/en-us/dotnet/api/system.threading.threadpool?view=net-5.0' }
