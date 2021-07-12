@@ -5,7 +5,7 @@ description: 'Cassandra is a distributive database where each node has equal rig
               All nodes in the system are equal, how to get the latest result from node 3?
               
               Cassandra solution: Set up the minimum number of nodes that should be requested by the processing request node (node 3 in this case).
-              For example, consistency of factor 3 is chosen. It means node should request node 1 and node 2, compare the values and return the result.
+              For example, consistency of factor 3 is chosen. It means the processing node, that handles initial request, should also ask node 1 and node 2 for their data, compare all 3 values and return the result.
               How to compare the values? A recoded with the latest timestamp (or version) wins.
 links: 
 - {name: 'Coursera - Introduction to NoSQL Databases - Cassandra', url: 'https://www.coursera.org/learn/introduction-to-nosql-databases/lecture/19KYO/crud-operations-part-2'}
