@@ -1,0 +1,13 @@
+name: 'Thread Pool'
+description: 'The client requested to create a web shop. Magento CMS system was introduced. It is a classical .NET MVC Web aplication. 
+              UI (HTML) rendering and requests processing, everything happens on the server side.
+              Then client asked for a featuer to write blog post or goods description, and not as a separate website URL, but exactly as part of other pages.
+              Magento does not include this feature. There is a famouse Wordpress Blog system that suie well the requirement.
+              
+              How to use two different systems and make a UI displaying these systems on one page?
+              Solution: Use Magento and Wordpress as server API. For the UI part use custom HTML UI based on React or VueJS.
+              Make requests to different backend APIs (Magento API, Wordpress API), display the results on UI.
+              UI becomes as a tile of different systems. One part displays goods and prices from shop, another part displays blog posts, all on the same page.
+              The UI can be modified to include other APIs from different vendors (translation module, maps, etc.).'
+links: 
+- {name: 'Headless Magento: The Future of Commerce | Jamie Marie Schouren | Meet Magento NYC', url: 'https://www.youtube.com/watch?v=UpVVGmmehUY'}
