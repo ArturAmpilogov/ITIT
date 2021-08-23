@@ -5,7 +5,7 @@ description: 'A healthcare system had two parts: the emergency room (ER) and med
               That system required date of birth to control the prescription.
               How to move the record that is in one system is nullable, and in another is not?
               [Bad solution] Set default date. The solution is bad because a valid doctor prescription can be blocked by software due to date of birth mismatch.
-              [Good solution] Instead of the exact date, a range of age was applied (toddler, teenager, etc.), which was simple to specify in the ER based on the patient view.
-              The prescription logic was updated accordingly, and it was fine to have approximate age value.
+              [Good solution] Instead of the exact date, ranges of ages were presented (toddler, pre-teen, teenager, adult, senior), which were simple to specify in the ER based on the patient view.
+              All the business rules in the medication system were adopted accordingly to the age range. The semantic rules changed in both systems!
 links: 
 - {name: 'Distributed Systems Design Fundamentals, Fallacy #8 The network is homogeneous by Udi Dahan', url: 'https://learn.particular.net/courses/take/distributed-systems-design-fundamentals-online/lessons/22697773-fallacy-8-the-network-is-homogeneous'}
