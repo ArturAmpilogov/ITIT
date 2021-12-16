@@ -1,0 +1,12 @@
+name: ''
+description: 'How can one certify when a document (a text, an audio, a video file, a financial transaction) was created or last modified?.
+              This is especially important for intellegent documnets - patents.
+              One idea is to use a central service that will timestamp the document and sign it. The authority of the sign can be verified.
+              How one can ensure that the central service will not cheat, for example, by setting an old or a far future date to the document?
+              Solution: 
+              Use a ledger of records. Each record contains a link (hash) to the previous record. 
+              Plus compute the hash of the whole record itself, including the previos link. Send back the data to the client with the computed hash.
+              The client can approve that the document was signed by the central organization. 
+              While the central organization cannot set the back or future dates, otherwise breaking the the already published ledger sequence.'
+links: 
+- {name: 'How to Time-Stamp a Digital Document, Stuart Haber, W. Scott Stornetta, 1991', url: 'https://www.anf.es/pdf/Haber_Stornetta.pdf'}
