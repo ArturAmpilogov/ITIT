@@ -33,3 +33,6 @@
    references: 
     - [ariz-1973] p.146     
   }
+- { name: 'Hard to solve - Easy to verify'
+    description: 'Use an algorithm taking huge resources to solve a puzzle and tiny resources to verify the solution'   
+  }
